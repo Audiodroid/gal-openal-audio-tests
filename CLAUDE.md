@@ -2,7 +2,7 @@
 
 pytest suite that tests OpenAL Soft's rendered audio output (via the loopback device, with `ctypes`/`cffi`), not just its API return values.
 
-Part of `gal-ghost-audio-lab-hub`; see `../CLAUDE.md` for the intention and how we work. The user writes the code, Claude guides. Setup and build steps are in `README.md`.
+Part of `gal-ghost-audio-lab-hub`; see `../CLAUDE.md` for the intention and how we work. Audiodroid writes the code, Claude guides. Setup and build steps are in `README.md`.
 
 ## Design
 

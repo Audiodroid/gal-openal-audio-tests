@@ -32,7 +32,7 @@ cmake -S extern/openal-soft -B build/openal-soft -DCMAKE_BUILD_TYPE=Release -DAL
 ```
 
 ```bash
-cmake --build build/openal-soft -j 8
+cmake --build build/openal-soft --parallel
 ```
 
 This produces `build/openal-soft/libopenal.dylib` (`.so` on Linux). The tests load that exact file with `ctypes`, by path. Do not rely on the system's library: macOS ships its own, older OpenAL framework, and a plain `find_library("openal")` could pick that one up without anyone noticing.
